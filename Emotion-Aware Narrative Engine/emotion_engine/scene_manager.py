@@ -217,11 +217,15 @@ class SceneManager:
         
         # Try fuzzy matching
         for scene, definition in self.scene_definitions.items():
-            if scene_name in definition.get("aliases", []):
+            aliases = definition.get("aliases", [])
+            if not aliases:
+                continue
+                
+            if scene_name in aliases:
                 return definition
             
             # Check if scene_name is similar to any alias
-            matches = get_close_matches(scene_name, definition.get("aliases", []), n=1, cutoff=0.8)
+            matches = get_close_matches(scene_name, aliases, n=1, cutoff=0.8)
             if matches:
                 return definition
         
