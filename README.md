@@ -140,6 +140,13 @@ result = engine.detect_emotion("quit it", scene="romantic_date", context="flirty
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Badges
+
+[![PyPI version](https://badge.fury.io/py/emotion-aware-narrative.svg)](https://badge.fury.io/py/emotion-aware-narrative)
+[![Python Versions](https://img.shields.io/pypi/pyversions/emotion-aware-narrative.svg)](https://pypi.org/project/emotion-aware-narrative/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Actions](https://github.com/sanjthebest/Emotion-Aware-Narrative-Engine/actions/workflows/python-app.yml/badge.svg)](https://github.com/sanjthebest/Emotion-Aware-Narrative-Engine/actions)
+
 ## Acknowledgments
 
 - Uses the emotion detection model from Hugging Face
