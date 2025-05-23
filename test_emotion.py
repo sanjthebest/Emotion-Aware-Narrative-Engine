@@ -1,6 +1,6 @@
 from emotion_engine import EmotionEngine
 
-def test_dialogue(engine, dialogue_data):
+def print_dialogue(engine, dialogue_data):
     """Helper function to test dialogue and print results"""
     print("\nTesting dialogue:")
     print(f"Text: {dialogue_data['text']}")
@@ -60,7 +60,7 @@ def main():
     
     # Run all test cases
     for test_case in test_cases:
-        test_dialogue(engine, test_case)
+        print_dialogue(engine, test_case)
 
 if __name__ == "__main__":
     main() 
